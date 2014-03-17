@@ -32,3 +32,13 @@ Let's set an example :
 Man can use the exact same command line (except -l/-r). Extra informations are ignored...
     
 Beware that this is much less secure than reverse ssh, but it is much easier to use (especially when using Windows as local side, because installing a ssh server on Windows is quite hard...). It has not been tested on Windows yet, but as it is PyQt, it should work just fine !
+
+TODO (future evolutions) :
+-----
+ * Add a little protocol for auto configuration on local side
+ * crypto (ssl sockets) for security
+ * Support of multiple remote sides on local side (it may be already the case)
+ * Maybe more protocol : 
+  * Remote : send id/description, no conf for local port (only listen on local side, just like ssh)
+  * Local : get the id/description, auto allocate local random port
+  * Local : generate a webpage for visualization of remote sides and get descriptions and urls. 
